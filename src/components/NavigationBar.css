@@ -44,3 +44,11 @@ p{
     width: 85%;
     margin: 0 auto;
 }
+
+a:hover{
+    background-color: pink;
+}
+
+a{
+    transition: all ease .2s;
+}
