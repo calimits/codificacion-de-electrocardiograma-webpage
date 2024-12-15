@@ -12,7 +12,6 @@ import NavigationBar from './components/NavigationBar.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
-      <NavigationBar></NavigationBar>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<AboutEcr/>}/>
