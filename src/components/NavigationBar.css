@@ -1,0 +1,48 @@
+
+nav{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.NavigationBar-container{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background-color: whitesmoke;
+    position: sticky;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, .2);
+}
+
+img{
+    width: 12rem;
+}
+.links{
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    width: 8rem;
+    text-align: center;
+    margin: .5rem;
+    padding: .4rem;
+    border-radius: 5px;
+    border: 1px solid transparent;
+}
+
+.b-red{
+    background-color: rgb(209, 0, 0);
+}
+
+.b-blue{
+    background-color: rgb(28, 156, 179);
+}
+.b-green{
+    background-color: rgb(23, 134, 57);
+}
+.b-black{
+    background-color: rgb(26, 25, 25);
+}
+
+.c-red{
+    color: rgb(209, 0, 0);
+}
