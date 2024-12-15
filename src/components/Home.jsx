@@ -7,11 +7,6 @@ import { Link } from 'react-router';
 export default function Home(){
     return (
         <>
-        <div className="home-container">
-        <img src={pict} alt="ECR" />
-        <h4>Codificación de un <span className="c-red">electrocardiograma</span> con la menor cantidad de niveles posible</h4>
-        <NavigationBar></NavigationBar>
-        </div>
         <article className='home-page'>
         <h1>Electrocardiograma</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula eros, malesuada ac nibh vitae, aliquam sodales lacus. Morbi quis iaculis sapien. Nam eget nisl felis. Ut sodales ipsum vitae pharetra tempus. Vestibulum bibendum lorem lacus, vel dictum augue imperdiet at. Aliquam sapien lacus, pharetra finibus tempor dignissim, vestibulum sed leo. Donec congue sapien orci, eget vestibulum lacus semper et. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In volutpat eget quam vitae egestas.

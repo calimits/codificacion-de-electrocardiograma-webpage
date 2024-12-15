@@ -7,11 +7,13 @@ import AboutEcr from './components/AboutEcr.jsx'
 import Docs from './components/Docs.jsx'
 import SignalCoded from './components/SignalCoded.jsx'
 import NavigationBar from './components/NavigationBar.jsx'
+import Header from './components/Header.jsx'
 
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Router>
+      <Header></Header>
       <Routes>
         <Route path="/" element={<Home/>}/>
         <Route path="/about" element={<AboutEcr/>}/>
