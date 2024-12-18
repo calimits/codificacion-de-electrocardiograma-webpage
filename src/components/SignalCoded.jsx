@@ -1,4 +1,6 @@
+import Graphic from './Graphic';
 import './SignalCoded.css'
+
 
 
 export default function SignalCoded(){
@@ -10,8 +12,7 @@ export default function SignalCoded(){
             <button>8 niveles</button>
             <button>16 niveles</button>
         </section>
-        <canvas className='canvas-graph' id="uncoded-signal"></canvas>
-        <canvas className='canvas-graph' id="coded-signal"></canvas>
+        <Graphic></Graphic>
         
     </div>);
 }
