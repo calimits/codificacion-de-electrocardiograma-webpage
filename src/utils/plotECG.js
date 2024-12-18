@@ -1,7 +1,7 @@
 import Plotly from 'plotly.js-dist-min'
 
 
-function plotECG(xAxis,yAxis,GraphTitle,GraphId) {
+export default function plotECG(xAxis,yAxis,GraphTitle,GraphId) {
     const trace = {
         x: xAxis,
         y: yAxis,
