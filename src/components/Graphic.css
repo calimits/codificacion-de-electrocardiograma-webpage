@@ -11,4 +11,10 @@
     display: flex;
     flex-flow: column;
     align-items: center;
+    width: 100%;
+    overflow: auto;
+}
+
+.graphic{
+    width: 100%;
 }

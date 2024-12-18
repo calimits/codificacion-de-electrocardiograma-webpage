@@ -10,3 +10,8 @@ select{
     transition: border-color 0.25s;
 }
 
+.select-list{
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+}

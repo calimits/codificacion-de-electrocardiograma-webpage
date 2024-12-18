@@ -32,7 +32,7 @@ const LEVEL16 = [
 
 const LEVEL32 = [
     {value: 3, code: "00000"},
-    {value: 25, code: "00001"},
+    {value: 2.5, code: "00001"},
     {value: 2, code: "00010"},
     {value: 1.88, code: "00011"},
     {value: 1.75, code: "00100"},

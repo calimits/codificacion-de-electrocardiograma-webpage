@@ -1,11 +1,15 @@
 import "./SelectList.css"
 
-export default function SelectList(props){
+export default function SelectList({handleSelectChange,setCodedData}){
 
+    const handleChange = (e) =>{
+        handleSelectChange(e);
+        setCodedData(null);
+    }
     return(
-        <div>
-        <label htmlFor="derivations">Seleccione una derivación</label>
-        <select onChange={props.handleSelectChange} name="derivations" id="derivations">
+        <div className="select-list">
+        <label htmlFor="derivations">Seleccione una derivación o afectación</label>
+        <select onChange={handleChange} name="derivations" id="derivations">
             <option value="D1">Derivación D1</option>
             <option value="D2">Derivación D2</option>
             <option value="D3">Derivación D3</option>
