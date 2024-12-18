@@ -50,5 +50,16 @@ function codeSignal(levels,data){
     return pointsCoded;
 }
 
+export default function decodeSignal(codedData){
+    let decodedSignal = [];
+    codedData.forEach(pointCoded => {
+        decodedSignal.push(pointCoded.value)
+    });
+    return decodedSignal;
+}
+
 let data = [0.2, 1, 1.2, -0.23, -0.5];
-console.log(codeSignal(LEVEL8,data));
+let codedSignal = codeSignal(LEVEL8,data);
+console.log(codedSignal);
+console.log(decodeSignal(codedSignal));
+
