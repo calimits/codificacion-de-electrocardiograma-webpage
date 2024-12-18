@@ -14,9 +14,9 @@ export default function Graphic({GraphicId,title,xAxisData, yAxisData}){
             <h3>{title}</h3>
             <div id={GraphicId} className='graphic'></div>
             <section className="control-buttons">
-                <button>4 niveles</button>
                 <button>8 niveles</button>
                 <button>16 niveles</button>
+                <button>32 niveles</button>
             </section>
         </div>
     )

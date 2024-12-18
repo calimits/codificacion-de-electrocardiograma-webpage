@@ -12,7 +12,7 @@ export default function plotECG(xAxis,yAxis,GraphTitle,GraphId) {
     const layout = {
         title: GraphTitle,
         xaxis: { title: 'Tiempo (s)' },
-        yaxis: { title: 'Amplitud' }
+        yaxis: { title: 'Amplitud (mV)' }
     };
     Plotly.newPlot(GraphId, [trace], layout);
 }
