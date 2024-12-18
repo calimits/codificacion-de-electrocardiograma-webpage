@@ -1,15 +1,12 @@
 import { useEffect } from "react"
-import data from "../utils/db.json"
 import plotECG from "../utils/plotECG"
 import './Graphic.css'
 
 
-export default function Graphic({GraphicId,title}){
-    const t = data.ECGDerivations[0].t;
-    const y = data.ECGDerivations[1].ecgD1;
+export default function Graphic({GraphicId,title,xAxisData, yAxisData}){
 
     useEffect(()=>{
-        plotECG(t,y,title,GraphicId);
+        plotECG(xAxisData,yAxisData, title,GraphicId);
     },[]);
 
     return (
