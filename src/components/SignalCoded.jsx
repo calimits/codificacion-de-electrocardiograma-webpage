@@ -92,7 +92,7 @@ export default function SignalCoded(){
             yAxisData={data.ECGExamples[2].ecgFA} setCodedData={setCodedData}></Graphic>
         ):(null)}
         {codedData ?(
-            <Graphic title="Señal después de la codificación y decodificación"
+            <Graphic title="Señal codificada"
             GraphicId="CodedSignal"
             xAxisData={data.ECGDerivations[0].t} 
             yAxisData={codedData} disabled={true}></Graphic>
