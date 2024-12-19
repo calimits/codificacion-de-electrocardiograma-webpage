@@ -4,7 +4,7 @@ import './Graphic.css'
 import codeSignal from "../utils/codeSignal";
 import { LEVEL16, LEVEL32, LEVEL8 } from "../utils/levelsData";
 import decodeSignal from "../utils/decodeSignal";
-import { LEVELS128, LEVELS256, LEVELS64 } from "../utils/moreLevels";
+import { LEVELS128, LEVELS256, LEVELS4096, LEVELS512, LEVELS64 } from "../utils/moreLevels";
 import { data } from "react-router";
 
 
@@ -47,6 +47,14 @@ export default function Graphic({GraphicId,title,xAxisData, yAxisData,setCodedDa
             decodedSignal = decodeSignal(codeSignal(LEVELS256,yAxisData));
             console.log(decodedSignal);
         };
+        if (e.target.value === "512") {
+            decodedSignal = decodeSignal(codeSignal(LEVELS512,yAxisData));
+            console.log(decodedSignal);
+        };
+        if (e.target.value === "4096") {
+            decodedSignal = decodeSignal(codeSignal(LEVELS4096,yAxisData));
+            console.log(decodedSignal);
+        };
         setCodedData([...decodedSignal]);
     }
 
@@ -66,6 +74,8 @@ export default function Graphic({GraphicId,title,xAxisData, yAxisData,setCodedDa
                 <button disabled={unable||disabled} value={64} onClick={e=>handleClick(e)}>64 niveles</button>
                 <button disabled={unable||disabled} value={128} onClick={e=>handleClick(e)}>128 niveles</button>
                 <button disabled={unable||disabled} value={256} onClick={e=>handleClick(e)}>256 niveles</button>
+                <button disabled={unable||disabled} value={512} onClick={e=>handleClick(e)}>512 niveles</button>
+                <button disabled={unable||disabled} value={4096} onClick={e=>handleClick(e)}>4096 niveles</button>
                 <button disabled={disabled} value={32} onClick={e=>handleReset(e)}>Reset</button>
             </section>
         </div>
