@@ -94,7 +94,7 @@ export default function SignalCoded(){
         {codedData ?(
             <Graphic title="Señal después de la codificación y decodificación"
             GraphicId="CodedSignal"
-            xAxisData={data.ECGExamples[0].t} 
+            xAxisData={data.ECGDerivations[0].t} 
             yAxisData={codedData} disabled={true}></Graphic>
         ):(null)}
     </div>);

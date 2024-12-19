@@ -15,4 +15,5 @@ export default function plotECG(xAxis,yAxis,GraphTitle,GraphId) {
         yaxis: { title: 'Amplitud (mV)' }
     };
     Plotly.newPlot(GraphId, [trace], layout);
+    console.log(xAxis);
 }
