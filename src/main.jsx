@@ -15,10 +15,8 @@ createRoot(document.getElementById('root')).render(
     <Router>
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/about" element={<AboutEcr/>}/>
-        <Route path="/docs" element={<Docs/>}/>
-        <Route path="/signalcoded" element={<SignalCoded/>}/>
+        <Route path="/" element={<SignalCoded/>}/>
+        <Route path="/about" element={<Home/>}/>
         <Route path="*" element={<h1>Error 404 Not Found</h1>}/>
       </Routes>
     </Router>

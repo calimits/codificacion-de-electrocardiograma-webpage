@@ -4,7 +4,7 @@
 export default function AboutEcr(){
     return (<>
     
-        <h1>About ECR</h1>
+        <h1>Codificación de señal</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula eros, malesuada ac nibh vitae, aliquam sodales lacus. Morbi quis iaculis sapien. Nam eget nisl felis. Ut sodales ipsum vitae pharetra tempus. Vestibulum bibendum lorem lacus, vel dictum augue imperdiet at. Aliquam sapien lacus, pharetra finibus tempor dignissim, vestibulum sed leo. Donec congue sapien orci, eget vestibulum lacus semper et. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In volutpat eget quam vitae egestas.
     
     Nullam interdum diam dolor, a placerat dolor facilisis quis. Etiam nec porta ex, in luctus tortor. Mauris vel ipsum non lorem tempus commodo id pretium magna. Cras posuere, ipsum a malesuada pretium, tortor urna suscipit quam, non pellentesque ex quam eu purus. Integer ut purus congue, mattis urna at, malesuada arcu. Fusce ac metus sapien. Suspendisse faucibus accumsan tortor, nec facilisis purus tincidunt sit amet. Vestibulum ornare arcu at molestie posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean a lobortis magna. Quisque scelerisque, risus ut pulvinar elementum, elit neque congue lorem, sollicitudin laoreet lectus libero sit amet ipsum. Sed faucibus ipsum dolor, nec efficitur augue sagittis in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;

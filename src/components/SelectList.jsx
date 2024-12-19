@@ -22,8 +22,8 @@ export default function SelectList({handleSelectChange,setCodedData}){
             <option value="AVF">Derivación AVF</option>
             <option value="AVR">Derivación AVR</option>
             <option value="AVL">Derivación AVL</option>
-            <option value="Taquicardia">Taquicardia</option>
-            <option value="FA">FA</option>
+            <option value="Taquicardia">Taquicardia Sinusal</option>
+            <option value="FA">Fibrilación Auricular</option>
         </select>
         </div>
     )
