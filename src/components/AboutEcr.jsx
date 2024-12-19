@@ -1,19 +1,154 @@
 
+import './AboutEcr.css'
 
+let codeFunctions = `function findClosestLevel(point,levels){
+    let closestCurrentLevel = {value: 100, code: ""};
+    levels.forEach(level=>{
+        closestCurrentLevel = Math.abs(point-level.value) < Math.abs(closestCurrentLevel.value-point) ?
+        (level) : (closestCurrentLevel);
+    })
+    return closestCurrentLevel;
+}
+    function codeSignal(levels,data){
+    let pointsCoded = [];
+    data.forEach(point => {
+        pointsCoded.push(findClosestLevel(point,levels));
+    });
+    return pointsCoded;
+}
+`;
+let codeLEVELS = `const LEVEL8 = [
+        {value: 2, code: "000"},
+        {value: 1.5, code: "001"},
+        {value: 1, code: "010"},
+        {value: 0.18, code: "011"},
+        {value: 0, code: "100"},
+        {value: -0.18, code: "101"},
+        {value: -0.3, code: "110"},
+        {value: -0.64, code: "111"}
+    ];
+
+
+const LEVEL16 = [
+    {value: 2, code: "0000"},
+    {value: 1.75, code: "0001"},
+    {value: 1.5, code: "0010"},
+    {value: 1.25, code: "0011"},
+    {value: 1, code: "0100"},
+    {value: 0.7, code: "0101"},
+    {value: 0.4, code: "0110"},
+    {value: 0.25, code: "0111"},
+    {value: 0.18, code: "1000"},
+    {value: 0.1, code: "1001"},
+    {value: 0, code: "1010"},
+    {value: -0.1, code: "1011"},
+    {value: -0.18, code: "1100"},
+    {value: -0.3, code: "1101"},
+    {value: -0.5, code: "1101"},
+    {value: -0.64, code: "1111"}
+];
+
+const LEVEL32 = [
+    {value: 3, code: "00000"},
+    {value: 2.5, code: "00001"},
+    {value: 2, code: "00010"},
+    {value: 1.88, code: "00011"},
+    {value: 1.75, code: "00100"},
+    {value: 1.62, code: "00101"},
+    {value: 1.5, code: "00110"},
+    {value: 1.33, code: "00111"},
+    {value: 1.25, code: "01000"},
+    {value: 1.12, code: "01001"},
+    {value: 1, code: "01010"},
+    {value: 0.85, code: "01011"},
+    {value: 0.7, code: "01100"},
+    {value: 0.55, code: "01101"},
+    {value: 0.4, code: "01110"},
+    {value: 0.32, code: "01111"},
+    {value: 0.25, code: "10000"},
+    {value: 0.18, code: "10001"},
+    {value: 0.13, code: "10010"},
+    {value: 0.1, code: "10011"},
+    {value: 0.07, code: "10100"},
+    {value: 0.03, code: "10101"},
+    {value: 0, code: "10110"},
+    {value: -0.03, code: "10111"},
+    {value: -0.07, code: "11000"},
+    {value: -0.1, code: "11001"},
+    {value: -0.13, code: "11010"},
+    {value: -0.18, code: "11011"},
+    {value: -0.25, code: "11100"},
+    {value: -0.3, code: "11101"},
+    {value: -0.5, code: "11110"},
+    {value: -0.64, code: "11111"}
+];`;
 
 export default function AboutEcr(){
     return (<>
-    
-        <h1>Codificación de señal</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ligula eros, malesuada ac nibh vitae, aliquam sodales lacus. Morbi quis iaculis sapien. Nam eget nisl felis. Ut sodales ipsum vitae pharetra tempus. Vestibulum bibendum lorem lacus, vel dictum augue imperdiet at. Aliquam sapien lacus, pharetra finibus tempor dignissim, vestibulum sed leo. Donec congue sapien orci, eget vestibulum lacus semper et. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In volutpat eget quam vitae egestas.
-    
-    Nullam interdum diam dolor, a placerat dolor facilisis quis. Etiam nec porta ex, in luctus tortor. Mauris vel ipsum non lorem tempus commodo id pretium magna. Cras posuere, ipsum a malesuada pretium, tortor urna suscipit quam, non pellentesque ex quam eu purus. Integer ut purus congue, mattis urna at, malesuada arcu. Fusce ac metus sapien. Suspendisse faucibus accumsan tortor, nec facilisis purus tincidunt sit amet. Vestibulum ornare arcu at molestie posuere. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aenean a lobortis magna. Quisque scelerisque, risus ut pulvinar elementum, elit neque congue lorem, sollicitudin laoreet lectus libero sit amet ipsum. Sed faucibus ipsum dolor, nec efficitur augue sagittis in. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
-    
-    Aenean nec sem nec justo molestie efficitur ut id elit. Aenean quis lobortis mauris. Cras malesuada feugiat auctor. Vestibulum imperdiet nibh rhoncus dui ultricies, ut ornare ligula fringilla. Mauris malesuada neque sit amet vestibulum aliquet. Cras sollicitudin diam ac lobortis vestibulum. Etiam vel lectus vehicula, faucibus turpis in, viverra elit.
-    
-    Sed orci diam, euismod quis tellus in, porta tristique justo. In eu justo a libero laoreet egestas. Fusce ultrices odio diam. Nulla mattis lorem porta egestas euismod. Duis leo tellus, dictum vitae fermentum in, aliquam nec ligula. Aenean condimentum est diam, vitae porttitor nisl sodales id. Sed ligula sem, accumsan sit amet ante at, sollicitudin volutpat massa. Donec at congue orci. Sed blandit euismod quam, pellentesque efficitur lectus accumsan vel. Nullam rutrum, odio nec blandit consequat, arcu nulla porttitor libero, ac molestie erat mi in turpis. Praesent mauris felis, finibus eu magna volutpat, blandit eleifend est. Proin eget nibh vel lacus sagittis semper. Quisque iaculis faucibus ipsum, eu cursus felis sodales scelerisque. In elementum massa id velit accumsan efficitur.
-    
-    Mauris eu velit urna. Nullam ac arcu gravida, sollicitudin lectus non, vestibulum mi. Etiam nisl nunc, vestibulum eget lacus vel, laoreet egestas tellus. Etiam at nulla dapibus, elementum nisi dapibus, dictum felis. Vestibulum viverra, sapien sit amet porttitor sagittis, nibh purus ultrices dolor, vel porttitor urna justo eu purus. Sed vel massa ante. Nulla dui arcu, pretium vel ipsum et, aliquet fermentum tortor. Duis imperdiet condimentum nibh in euismod. Integer vulputate ipsum nec enim dignissim dapibus. Suspendisse tempor diam vel libero finibus tincidunt. Cras rutrum velit sit amet massa laoreet cursus. Sed sit amet suscipit mauris. Nunc sit amet faucibus velit. Nulla fermentum varius diam id mattis.
-    </p>
+
+            <h1>Codificación de señal</h1>
+            <hr />
+            <h2>Selección de niveles</h2>
+            <p>Para la selección de niveles es necesario un conocimiento sobre 
+                las características principales de la onda a codificar. En este caso,
+                para codificar una onda de electrocardiograma, es imprescindible el conocimiento
+                de las 12 derivaciones, pues según la colocación de los electrodos en el cuerpo 
+                humano, cada forma de onda de cada derivación es diferente, y representa distintas
+                características del corazón.
+            </p>
+            <br />
+            <p>Teniendo lo anterior en cuenta, y a partir de un estudio sobre las ondes P, T,
+                U y el complejo QRS, mediante el cual se escogieron meticulosamente, los niveles para
+                la codificación de la señal en dependencia de las diferentes amplitudes de cada onda.
+                Los niveles escogidos se muestran a continuación:
+            </p>
+            <br />
+            <pre>
+                <code>
+                    {codeLEVELS}
+                </code>
+            </pre>
+            <p>Como se puede apreciar, los niveles fueron escogidos de forma no equiespaciada,
+                para un mayor control sobre la onda codificada.
+            </p>
+            <br />
+
+            <h2>Función de codificación</h2>
+            <p>La función para la codificación se encarga de aproximar cada punto muestreado
+                al nivel más cercano. 
+            </p>
+            <pre>
+                <code>
+                    {codeFunctions}
+                </code>
+            </pre>
+            <p>Claramente, como se puede apreciar, todo lo que se utiliza en esta página 
+                web son simulaciones, las cuales fueron realizadas con Matlab, gracias al trabajo de
+                R. Karthik. 
+            </p>
+            <br />
+            <p>En el repositorio de GitHub se encuentra el código fuente, así como el contenido
+                adicional utilizdao para el desarrollo de la página web, lo que incluye las funciones de 
+                simulación de electrocardiogramas para matlab.
+                EL código está abierto a su descarga y modificación.
+            </p>
+            <br />
+            <p>Por último se decidió utlizar más niveles, para la codificación, los cuales sí son
+                equiespaciados, y como la cantidad se incrementa considerablemnte, se decidió generarlos
+                a partir de funciones en Matlab.
+            </p>
+            <h2>Conclusiones</h2>
+            <p>A partir del análisis y comparación de la señal original, y la señal codificada
+                es evidente que para 8 y 16 niveles, la onda resultante carece de información necesaria 
+                para la comprensión de los doctores. A partir de 32 niveles la onde resultante, es bastante similar 
+                a la original, sin embargo aún existen diferencias que podrían conduicr a errores en la lectura
+                del electrocardiograma. Por tanto, como mínimo se necesitan 32 niveles, lo cual no significa que 
+                sean recomendables.
+            </p>
+            <br />
+            <br />
+            <br />
+            <br />
+            
         </>);
 }

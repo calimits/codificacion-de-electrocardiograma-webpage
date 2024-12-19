@@ -1,0 +1,35 @@
+
+
+article{
+    width: 80%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+hr{
+    width: 80%;
+}
+
+h2{
+    text-align: center;
+}
+
+p{
+    width: 80%;
+}
+
+pre{
+    width: 80%;
+    margin: 0 auto;
+}
+
+code{
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 2.5rem;
+    overflow: auto;
+}
+
