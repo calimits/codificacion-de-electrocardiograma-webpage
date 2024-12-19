@@ -142,10 +142,11 @@ export default function AboutEcr(){
             <br />
             <h2>Conclusiones</h2>
             <p>A partir del análisis y comparación de la señal original, y la señal codificada
-                es evidente que para 8 y 16 niveles, la onda resultante carece de información necesaria 
-                para la comprensión de los doctores. A partir de 32 niveles la onde resultante, es bastante similar 
-                a la original, sin embargo aún existen diferencias que podrían conduicr a errores en la lectura
-                del electrocardiograma. Por tanto, como mínimo se necesitan 32 niveles, lo cual no significa que 
+                es evidente que para 8, 16, 32, 64 y 128 niveles, la onda resultante carece de información necesaria 
+                para la comprensión de los doctores, por ejemplo en la
+                afectación de taquicardia sinusal. A partir de 256 niveles la onda resultante, es bastante similar 
+                a la original, sin embargo aún existen diferencias que podrían conducir a errores en la lectura
+                del electrocardiograma. Por tanto, como mínimo se necesitan 256 niveles, lo cual no significa que 
                 sean recomendables.
             </p>
             <br />
