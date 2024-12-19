@@ -117,11 +117,13 @@ export default function AboutEcr(){
             <p>La función para la codificación se encarga de aproximar cada punto muestreado
                 al nivel más cercano. 
             </p>
+            <br />
             <pre>
                 <code>
                     {codeFunctions}
                 </code>
             </pre>
+            <br />
             <p>Claramente, como se puede apreciar, todo lo que se utiliza en esta página 
                 web son simulaciones, las cuales fueron realizadas con Matlab, gracias al trabajo de
                 R. Karthik. 
@@ -137,6 +139,7 @@ export default function AboutEcr(){
                 equiespaciados, y como la cantidad se incrementa considerablemnte, se decidió generarlos
                 a partir de funciones en Matlab.
             </p>
+            <br />
             <h2>Conclusiones</h2>
             <p>A partir del análisis y comparación de la señal original, y la señal codificada
                 es evidente que para 8 y 16 niveles, la onda resultante carece de información necesaria 
@@ -149,6 +152,6 @@ export default function AboutEcr(){
             <br />
             <br />
             <br />
-            
+
         </>);
 }
