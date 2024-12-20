@@ -23,6 +23,7 @@ pre{
     margin: 0 auto;
     background-color: whitesmoke;
     border-radius: 10px;
+    overflow: auto;
 }
 
 code{
@@ -31,7 +32,6 @@ code{
     width: 100%;
     
     padding: 2.5rem;
-    overflow: auto;
 }
 
 p{
