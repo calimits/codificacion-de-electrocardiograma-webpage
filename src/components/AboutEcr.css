@@ -37,3 +37,10 @@ code{
 p{
     text-align: justify;
 }
+
+@media (prefers-color-scheme: dark) {
+    pre{
+        color: #f9f9f9 ;
+        background-color: #26292c
+    }
+}
