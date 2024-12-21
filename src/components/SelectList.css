@@ -19,5 +19,6 @@ select{
 @media (prefers-color-scheme: dark) {
     select{
         background-color: #26292c;
+        color: #f9f9f9;
     }
 }
