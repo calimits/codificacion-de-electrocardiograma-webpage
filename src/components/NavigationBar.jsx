@@ -6,7 +6,7 @@ export default function NavigationBar(){
         <nav>
         <Link to="/" className="links b-red" >ECG</Link>
         <Link to="/about" className="links b-blue" >Acerca</Link>
-        <a href="https://github.com/calimits/signal-coding" target="_blank" className="links b-green" >Github</a>
+        <a href="https://github.com/calimits/codificacion-de-electrocardiograma" target="_blank" className="links b-green" >Github</a>
         </nav>
     );
 } 
