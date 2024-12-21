@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://github.com/calimits/codificacion-de-electrocardiograma-webpage",
+  "homepage": "https://calimits.github.io/codificacion-de-electrocardiograma-webpage",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
