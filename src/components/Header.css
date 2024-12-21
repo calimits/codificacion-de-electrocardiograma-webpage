@@ -14,3 +14,9 @@
 img{
     width: 12rem;
 }
+
+@media (prefers-color-scheme: dark) {
+    .header-container{
+        background-color: rgb(95, 95, 95);
+}
+}
